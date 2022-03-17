@@ -12,4 +12,18 @@ public class Ej4 {
     /*4.- ¿Qué diferencia existe entre sobrecargar un método y sobrescribir un método?*/
  /*Sobrecargar significa definir nuevos métodos. 
  Sobrescribir significa ocultar un método con una nueva definición de ese mismo método.*/
+    
+    
+    //----Sobrecarga---//
+    /*
+    -Firma del metodo cambia
+    (parametros)
+    -propia clase
+    */
+    
+    //----Sobrescrictura-------//
+    /*
+    -Firma no cambia (el nombre y parametros)
+    -Jerarquia de clases(herencia)
+    */
 }
