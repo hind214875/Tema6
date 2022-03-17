@@ -24,6 +24,6 @@ public class Triangulo extends Figura {
     
     @Override
     public void calcularArea(){
-        System.out.println("Area Triangulo = "+(base*altura)/2);
+        System.out.println("Area Triangulo = "+(getBase()*altura)/2);
     }
 }

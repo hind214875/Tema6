@@ -18,6 +18,9 @@ public class Prueba {
         figuras.add(new Rectangulo(10, 12)); // Base=10 Altura=12
         figuras.add(new Triangulo(10, 5)); // Base=10 Altura=5
         figuras.add(new Romboide(15, 5)); // Base=15, Altura=5 
+        
+        //Figura f=new Figura(1,2);de la clase abstacta no puedo crear nuevo objeto
+        
         for (Figura f : figuras) {
             f.calcularArea();
         }

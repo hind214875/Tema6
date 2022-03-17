@@ -8,9 +8,9 @@ package ej11;
  *
  * @author hinda
  */
-public class Figura {
+public abstract class Figura {
     //atributos
-    protected int base;
+    private int base;
     protected int altura;
     
     //constrectores
@@ -43,8 +43,6 @@ public class Figura {
         return "Figura{" + "base=" + base + ", altura=" + altura + '}';
     }
     
-    public void calcularArea(){
-        System.out.println("Área: ");
-    }
+    public abstract void  calcularArea();
     
 }

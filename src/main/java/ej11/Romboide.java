@@ -24,7 +24,7 @@ public class Romboide extends Figura {
     
     @Override
     public void calcularArea(){
-        System.out.println("Area Romboide = "+ base*altura);
+        System.out.println("Area Romboide = "+ getBase()*altura);
     }
     
     
