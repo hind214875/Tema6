@@ -23,7 +23,7 @@ public class Rectangulo extends Figura{
     //
     @Override
     public void calcularArea(){
-        System.out.println("Area Rectangulo:"+ base*altura);
+        System.out.println("Area Rectangulo = "+ base*altura);
     }
     
     
