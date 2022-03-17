@@ -26,4 +26,8 @@ public class Ej4 {
     -Firma no cambia (el nombre y parametros)
     -Jerarquia de clases(herencia)
     */
+    
+    //clase abstracta
+    // 1.no puedo instanciar(crear nuevo objeto de clase abstracta)
+    //2.obliga implementas todos metodos abstact 
 }
