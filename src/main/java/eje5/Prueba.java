@@ -19,9 +19,9 @@ public class Prueba {
 
         Cliente c = new Cliente();
         Cliente c1 = new Cliente("Juan", "1234J", 22);
-        Cliente c2 = new Cliente("Alex", "1234J", 22);
-        Cliente c3 = new Cliente("Javier", "1234J", 22);
-        Cliente c4 = new Cliente("Hinda", "1234J", 22);
+        Cliente c2 = new Cliente("Juan", "1234J", 22);
+        Cliente c3 = new Cliente("Juan", "1234J", 22);
+        Cliente c4 = new Cliente("Hinda", "1834J", 22);
 
         //ArrayList<Cliente> clientes = new ArrayList<>();
 
@@ -38,6 +38,7 @@ public class Prueba {
         /*Comprobaciones de las propiedades transitiva, reflexiva, simétrica y nula.*/
         System.out.println("equals: " + c.equals(c1));
         System.out.println("c1 y c2 equals? " + c1.equals(c2));
+        System.out.println("es c1 equals null? "+c1.equals(null));
 
         /*
         Reflexiva: cualquier objeto que se compare con si mismo debe de devolver siempre verdadero. ( obj.equals(obj) ) 
