@@ -13,12 +13,8 @@ import java.util.Random;
  */
 public class Dado extends Azar {
 
-    public Dado(int posibilidades) {
-        super(posibilidades);
-    }
-    
-    public Dado(){
-        
+    public Dado() {
+       
     }
 
     @Override
@@ -29,7 +25,8 @@ public class Dado extends Azar {
 
     @Override
     public String toString() {
-        return super.toString() + "";
+        return super.toString()+" dado";
     }
+
 
 }

@@ -15,10 +15,6 @@ public class Moneda extends Azar {
 
     private static Random rd = new Random();
 
-    public Moneda(int posibilidades) {
-        super(posibilidades);
-    }
-
     public Moneda(){
         
     }
@@ -26,6 +22,11 @@ public class Moneda extends Azar {
     @Override
     public int lanzar() {
         return rd.nextInt(2) + 1;
+    }
+    
+     @Override
+    public String toString() {
+        return super.toString()+" Moneda";
     }
 
 }

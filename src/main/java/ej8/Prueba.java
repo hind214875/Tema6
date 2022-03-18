@@ -5,6 +5,8 @@
  */
 package ej8;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author hinda
@@ -15,8 +17,17 @@ public class Prueba {
         Dado d1=new Dado();
         Moneda m=new Moneda();
         Moneda m1=new Moneda();
+        
+        ArrayList<Azar> c=new ArrayList<>();
+        c.add(d);
+        c.add(d1);
+        c.add(m);
+        c.add(m1);
+        
+        for (Azar a : c) {
+            System.out.println(a.lanzar());
+        }
               
-        System.out.println(m.lanzar());
-        System.out.println(d.lanzar());
+       
     }
 }

@@ -17,6 +17,16 @@ public abstract class Azar {
         this.posibilidades = posibilidades ;
     }
 
+    public Azar() {
+    }
+    
     public abstract int lanzar();
+
+    @Override
+    public String toString() {
+        return "Azar{" + "posibilidades=" + posibilidades + '}';
+    }
+    
+    
  
 }
