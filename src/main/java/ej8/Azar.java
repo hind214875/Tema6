@@ -18,10 +18,5 @@ public abstract class Azar {
     }
 
     public abstract int lanzar();
-
-    @Override
-    public String toString() {
-        return "Azar{" + "posibilidades=" + posibilidades + '}';
-    }
-
+ 
 }

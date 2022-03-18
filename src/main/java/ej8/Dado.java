@@ -11,24 +11,25 @@ import java.util.Random;
  *
  * @author hinda
  */
-public class Dado extends Azar{
+public class Dado extends Azar {
 
     public Dado(int posibilidades) {
         super(posibilidades);
     }
     
-    
+    public Dado(){
+        
+    }
+
     @Override
     public int lanzar() {
-        Random rd=new Random();
-        return rd.nextInt(6)+1;
+        Random rd = new Random();
+        return rd.nextInt(6) + 1;
     }
 
     @Override
     public String toString() {
-        return super.toString()+"";
+        return super.toString() + "";
     }
-    
-    
-    
+
 }

@@ -11,8 +11,10 @@ package ej8;
  */
 public class Prueba {
     public static void main(String[] args) {       
-        Dado d=new Dado(2);
-        Moneda m=new Moneda(6);
+        Dado d=new Dado();
+        Dado d1=new Dado();
+        Moneda m=new Moneda();
+        Moneda m1=new Moneda();
               
         System.out.println(m.lanzar());
         System.out.println(d.lanzar());

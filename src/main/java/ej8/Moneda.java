@@ -13,23 +13,19 @@ import java.util.Random;
  */
 public class Moneda extends Azar {
 
-    private final Random RD = new Random();
+    private static Random rd = new Random();
 
     public Moneda(int posibilidades) {
         super(posibilidades);
     }
 
+    public Moneda(){
+        
+    }
 
     @Override
     public int lanzar() {
-        return RD.nextInt(2) + 1;
+        return rd.nextInt(2) + 1;
     }
-
-    @Override
-    public String toString() {
-        return super.toString()+" ";
-    }
-    
-    
 
 }
