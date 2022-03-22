@@ -48,7 +48,7 @@ public class CuentaAhorro extends Cuenta{
 
     @Override
     public void retirar(double saldo) {
-        if(getSaldo()>saldo){
+        if(getSaldo()-saldo>0){
             setSaldo(getSaldo()-saldo);
         }
     }
