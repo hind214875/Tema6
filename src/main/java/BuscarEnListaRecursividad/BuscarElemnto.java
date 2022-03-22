@@ -43,7 +43,7 @@ public class BuscarElemnto {
 //    }
     public static int buscarElemento(int[] lista, int elemento, int i) {
         if (i == lista.length || lista[i] == elemento) {
-            if (i== lista.length) {
+            if (i == lista.length) {
                 return -1;
             } else {
                 return i;
