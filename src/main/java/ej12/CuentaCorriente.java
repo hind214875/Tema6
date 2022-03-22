@@ -6,12 +6,13 @@ package ej12;
  */
 public class CuentaCorriente extends Cuenta {
 
-    private static double INTERES = 0.15;
+    private double interes = 0.15;
     private double sladoMinimo;
     
-    public CuentaCorriente(double sladoMinimo, Cliente cliente) {
+    public CuentaCorriente(double sladoMinimo, Cliente cliente,double interes) {
         super(cliente);
         this.sladoMinimo = sladoMinimo;
+        this.interes=interes;
     }
       
     
@@ -22,18 +23,28 @@ public class CuentaCorriente extends Cuenta {
     public void setSladoMinimo(double sladoMinimo) {
         this.sladoMinimo = sladoMinimo;
     }
+
+    public double getInteres() {
+        return interes;
+    }
+
+    public void setInteres(double interes) {
+        this.interes = interes;
+    }
+    
     
     @Override
     public String toString() {
-        return "CuentaCorriente{" + "sladoMinimo=" + sladoMinimo + '}';
+        return super.toString()+
+                "CuentaCorriente{" + "sladoMinimo=" + sladoMinimo + '}';
     }
     
     @Override
     public void actualizarSaldo() {
         if(getSaldo()>1000){
-            this.setSaldo(getSaldo()+(sladoMinimo*INTERES));
+            this.setSaldo(getSaldo()+(sladoMinimo*interes));
         }else{
-            this.setSaldo(getSaldo()+(this.getSaldo()+INTERES));
+            this.setSaldo(getSaldo()+(this.getSaldo()+interes));
         }
         
     }

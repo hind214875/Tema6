@@ -22,7 +22,7 @@ public abstract class Cuenta {
     //constrectores
 
     public Cuenta(Cliente cliente) {
-        this.numeroCuenta = RandomStringUtils.random(20);
+        this.numeroCuenta = RandomStringUtils.randomAlphabetic(20).toLowerCase();
         this.saldo = 0;
         this.cliente = cliente;
     }
@@ -31,11 +31,6 @@ public abstract class Cuenta {
         return numeroCuenta;
     }
 
-    public void setNumeroCuenta(String numeroCuenta) {
-        if(this.numeroCuenta==numeroCuenta){
-            this.numeroCuenta = RandomStringUtils.random(20);
-        }
-    }
 
     public double getSaldo() {
         return saldo;

@@ -16,17 +16,22 @@ public class Prueba {
         Cliente c3=new Cliente("Alex","Perez","56987LK");
         Cliente c4=new Cliente("Luis","Perez","98654HJ");
         
-        Cuenta cuentaC=new CuentaCorriente(1000,c1);//aqui polimorfismo
-        Cuenta cuentaC1=new CuentaCorriente(1000,c2);//aqui polimorfismo
-        Cuenta cuentaC2=new CuentaCorriente(1000,c3);//aqui polimorfismo
-        Cuenta cuentaH=new CuentaAhorro(1,500,c2);//aqui polimorfismo
-        Cuenta cuentaH1=new CuentaAhorro(1,500,c4);//aqui polimorfismo
+        //conversion implicita
+        Cuenta cuentaC=new CuentaCorriente(1000,c1,0.15); 
+        Cuenta cuentaC1=new CuentaCorriente(1000,c2,0.15); 
+        Cuenta cuentaC2=new CuentaCorriente(1000,c3,0.15); 
+        Cuenta cuentaH=new CuentaAhorro(1,500,c2); 
+        Cuenta cuentaH1=new CuentaAhorro(1,500,c4); 
         
         System.out.println("");
         cuentaC.retirar(500);
         System.out.println(cuentaC.getSaldo());
-        cuentaC1.actualizarSaldo();
+        cuentaC1.actualizarSaldo();//polimofismo
         System.out.println(cuentaC1.getSaldo());
+        
+        //convercion explicita
+        CuentaAhorro aux=(CuentaAhorro) cuentaC;
+        //entonces puedo acceder a metodos de cuentaAhorro;
         
 //        //lista de cuentas 
 //          ArrayList<Cuenta> listatCuentas=new ArrayList<>();

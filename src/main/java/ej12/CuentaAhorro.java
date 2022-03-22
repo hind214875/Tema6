@@ -36,7 +36,7 @@ public class CuentaAhorro extends Cuenta{
 
     @Override
     public String toString() {
-        return "CuentaAhorro{" + "interes=" + interes + ", comisionAnual=" + comisionAnual + '}';
+        return super.toString()+"CuentaAhorro{" + "interes=" + interes + ", comisionAnual=" + comisionAnual + '}';
     }
 
      
