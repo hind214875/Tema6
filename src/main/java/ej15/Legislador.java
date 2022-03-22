@@ -20,6 +20,9 @@ public abstract class Legislador extends Persona{
         this.provinciaQueRepresenta = provinciaQueRepresenta;
         this.partidoPolitico = partidoPolitico;
     }
+
+    public Legislador() {     
+    }
    
     //getters setters
 

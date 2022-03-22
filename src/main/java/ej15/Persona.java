@@ -19,8 +19,11 @@ public class Persona{
         this.nombre = nombre;
         this.Apellidos = Apellidos;
     }
-   
 
+    public Persona() {
+    }
+   
+    
     public String getNombre() {
         return nombre;
     }

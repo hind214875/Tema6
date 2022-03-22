@@ -12,7 +12,7 @@ import java.util.ArrayList;
  */
 public class prueba {
     public static void main(String[] args) {
-        Legislador l=new Diputado(101,"Seville","esqierda","Juan","lopez");
+        Legislador l=new Diputado(101,"Seville","esqierda","Juan","lopez");//coversion implicita
         Legislador B=new Diputado(104,"Malaga","derecha","Alex","Esq");
         Legislador c=new Senador(1000.00,"Cadiz","derecha","Alex","Esq");
         Legislador E=new Senador(2000.00,"Mallorca","derecha","nfdd","sdrg");
@@ -24,9 +24,13 @@ public class prueba {
         lista.add(E);
         
         for(Legislador le : lista) {
-            System.out.println(le.toString());
+            System.out.println(le.toString());//polimorfismo
             System.out.println(le.getCamaraEnQueTrabaja());//polimorfismo
+            if(le instanceof Diputado){
+                System.out.println(((Diputado) le).getNumeroAsiento());
+            }
         }
+        
         
     }
 }

@@ -19,6 +19,11 @@ public class Diputado extends Legislador {
         this.numeroAsiento = numeroAsiento;
     }
 
+    public Diputado() {
+    }
+    
+    
+
     public int getNumeroAsiento() {
         return numeroAsiento;
     }
