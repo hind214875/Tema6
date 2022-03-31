@@ -5,6 +5,7 @@
 package ej16;
 
 import java.util.Random;
+import org.apache.commons.lang3.RandomStringUtils;
 
 
 /**
@@ -13,7 +14,7 @@ import java.util.Random;
  */
 public class Robot implements Comparable<Robot>{
     //atibutos
-    private int numeroSerie;
+    private String numeroSerie;
     private int porcentajeVida;//entre 1 y 100
     
     //constantes
@@ -21,16 +22,22 @@ public class Robot implements Comparable<Robot>{
     
     //constrector
     public Robot() {
-        this.numeroSerie = RD.nextInt(10);
+        this.numeroSerie =RandomStringUtils.randomAlphabetic(5).toLowerCase(); 
         this.porcentajeVida = RD.nextInt(100)+1;
     }
 
-    //getters y setters
-    public int getNumeroSerie() {
+    public Robot(String numeroSerie, int porcentajeVida) {
+        this.numeroSerie = numeroSerie;
+        this.porcentajeVida = porcentajeVida;
+    }
+
+
+    public String getNumeroSerie() {
         return numeroSerie;
     }
 
-    public void setNumeroSerie(int numeroSerie) {
+    //getters y setters
+    public void setNumeroSerie(String numeroSerie) {
         this.numeroSerie = numeroSerie;
     }
 
@@ -45,31 +52,7 @@ public class Robot implements Comparable<Robot>{
     }
     
     //hachCode y equals
-    @Override
-    public int hashCode() {
-        int hash = 3;
-        hash = 37 * hash + this.numeroSerie;
-        hash = 37 * hash + this.porcentajeVida;
-        return hash;
-    }
-
-    @Override
-    public boolean equals(Object obj) {
-        if (this == obj) {
-            return true;
-        }
-        if (obj == null) {
-            return false;
-        }
-        if (getClass() != obj.getClass()) {
-            return false;
-        }
-        final Robot other = (Robot) obj;
-        if (this.numeroSerie != other.numeroSerie) {
-            return false;
-        }
-        return this.porcentajeVida == other.porcentajeVida;
-    }
+   
 
     @Override
     public int compareTo(Robot t) {
